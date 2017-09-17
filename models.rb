@@ -1,7 +1,6 @@
 require_relative 'db'
 
 Sequel::Model.plugin :prepared_statements
-Sequel::Model.plugin :prepared_statements_associations
 Sequel::Model.plugin :timestamps, update_on_create: true
 
 unless defined?(Unreloader)
